@@ -65,3 +65,52 @@ td {
     opacity: 1;
     transform: translateY(0);
   }
+
+  #divisao {
+    display: flex;
+  }
+
+  #imagem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #poluicao {
+    width: 100%;
+  }
+
+  #texto p {
+    margin-right: 100px;
+  }
+
+  footer {
+    height: 90px;
+    background-color: rgb(83, 167, 34);
+  }
+
+  .branch {
+    position: fixed;
+    width: 150px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    z-index: 10;
+    transform: scaleX(-1);
+  }
+
+  .branch-left {
+    left: 0;
+    top: 120px;
+    width: 360px;
+    transform: scaleX(-1);
+  }
+
+  .branch-right {
+    right: 0;
+    top: 290px;
+    width: 280px;
+  }
+
+  .show {
+    opacity: 1;
+  }

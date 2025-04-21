@@ -9,14 +9,15 @@
 <body>
     <header>
         <h1 class="titulo">Impactos da Poluição Atmosférica</h1>
-        <div><img src="imgs/bandeiraBrasil.png" alt="imgbrasil" class="imgLingua"></div>
+        <p></p>
     </header>
     <main>
+        <img src="imgs/galho2.png" alt="Galho Esquerdo" class="branch branch-left" id="branchLeft">
+        <img src="imgs/galho.png" alt="Galho Direito" class="branch branch-right" id="branchRight">
         <h1>Como Reduzir os Impactos da Poluição Atmosférica</h1>
         <br>
         <p>A poluição atmosférica é um dos maiores desafios ambientais do nosso tempo, afetando a saúde humana, a biodiversidade e a qualidade de vida. A emissão de gases poluentes, como dióxido de carbono (CO2), óxidos de nitrogênio (NOx) e material particulado, está diretamente ligada ao aumento de doenças respiratórias, mudanças climáticas e degradação dos ecossistemas.</p>
         <p>As principais fontes desse problema incluem a queima de combustíveis fósseis, atividades industriais, desmatamento e práticas agrícolas inadequadas. Reduzir a poluição do ar exige um esforço conjunto entre governos, empresas e cidadãos, adotando medidas sustentáveis para minimizar os danos e preservar o meio ambiente.</p>
-        <p>Impactos gerados</p>
         <p>Para ajudar a reduzir seus impactos, aqui estão algumas dicas essenciais que podem ser seguidas:</p>
         <br>
         <table border="1" cellpadding="10" cellspacing="0" id="dicas">
@@ -84,7 +85,38 @@
               </tr>
             </tbody>
           </table>
-        <br>        
+        <br>
+        <div id="divisao">
+          <div id="texto">
+            <h1>Notícias sobre o Assunto</h1>
+            <br>
+            <h2>Panorama Global</h2>
+            <p><b>Mortes causadas pela poluição do ar:</b><br>A Organização Mundial da Saúde (OMS) estima que a poluição do ar é responsável por cerca de 7 milhões de mortes por ano em todo o mundo.</p>
+            <p><b>Exposição na União Europeia:</b><br> Um relatório da Agência Europeia do Ambiente revelou que 94% da população urbana da União Europeia está exposta a níveis de partículas finas (PM2,5) acima dos limites recomendados pela OMS.</p>
+            <p><b>Melhoria na qualidade do ar em Paris:</b><br> A cidade de Paris conseguiu melhorar a qualidade do ar em 50% nos últimos 20 anos, graças a políticas ambientais eficazes implementadas em níveis europeu, nacional e local. </p>
+            <h2>Situação no Brasil</h2>
+            <p><b>Novos limites de poluição:</b><br> A partir de 2025, o Brasil adotará novos limites para a poluição do ar, alinhando-se parcialmente aos padrões da OMS. No entanto, apenas 13 estados possuem sistemas de monitoramento da qualidade do ar, o que dificulta a implementação efetiva das novas diretrizes. </p>
+            <p><b>Impacto econômico:</b><br> A poluição atmosférica, agravada pelas mudanças climáticas, já custa ao Brasil cerca de US$ 1 bilhão por ano, considerando os impactos na saúde pública e na economia.</p>
+            <p><b>Cidades mais poluídas:</b><br> Cubatão, São Paulo, Rio de Janeiro, Belo Horizonte e Manaus estão entre as cidades brasileiras com os maiores níveis de poluição do ar, devido a fatores como industrialização intensa, tráfego veicular e expansão urbana desordenada.</p>
+          </div>
+          <div id="imagem">
+            <img src="imgs/poluicao.png" alt="poluicao" id="poluicao">
+          </div>
+        </div>
     </main>
+    <footer></footer>
+    <script>
+      window.addEventListener('scroll', () => {
+        const scrollY = window.scrollY;
+  
+        if (scrollY > 100) {
+          document.getElementById('branchLeft').classList.add('show');
+          document.getElementById('branchRight').classList.add('show');
+        } else {
+          document.getElementById('branchLeft').classList.remove('show');
+          document.getElementById('branchRight').classList.remove('show');
+        }
+      });
+    </script>
 </body>
 </html>
